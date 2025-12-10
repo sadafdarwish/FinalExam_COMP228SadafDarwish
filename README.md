@@ -1,7 +1,6 @@
 # Final Exam – JavaFX Employment Application  
 **Author:** Sadaf Darwish  
 **Course:** COMP 228 – Java Programming  
-**Professor:**  
 **Date:** December 2025  
 
 ---
