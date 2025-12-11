@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.FormController">
+
+    <center>
+        <GridPane hgap="10" vgap="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20" />
+            </padding>
+
+            <children>
+                <!-- Row 0 -->
+                <Label text="Full Name:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                <TextField fx:id="txtFullName" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+                <!-- Row 1 -->
+                <Label text="Contact Number:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                <TextField fx:id="txtContact" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+                <!-- Row 2 -->
+                <Label text="Highest Education:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                <ComboBox fx:id="cmbEducation" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+                <!-- Row 3 -->
+                <Label text="Date:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                <DatePicker fx:id="dpDate" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+                <!-- Row 4 -->
+                <Label text="Salary:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+                <TextField fx:id="txtSalary" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+
+                <!-- Row 5 -->
+                <Button fx:id="btnSubmit" text="Submit"
+                        onAction="#handleSubmit"
+                        GridPane.rowIndex="5" GridPane.columnIndex="1" />
+
+                <!-- Row 6 -->
+                <Label fx:id="lblMessage"
+                       GridPane.rowIndex="6" GridPane.columnIndex="0"
+                       GridPane.columnSpan="2" />
+            </children>
+        </GridPane>
+    </center>
+
+</BorderPane>
